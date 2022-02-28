@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 50px 100px;
+    background: linear-gradient(to right, #00aaff, #00ff6c);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width:50%;
+    margin: 0 auto;
+}
+
+
+.task-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #bff3ef;
+}
+
+.task-container .title-container{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-container .priority-container{
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+}
+
+.task-container .description-container{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.task-container .date-container{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.task-container .btn-container{
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+.form-container{
+    position: fixed;
+    top: 50px;
+    left: 70px;
+    min-width: 20%;
+    background-color: #bff3ef;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-container .label-container{
+    margin-bottom: 20px;
+}
+
+
+
+.form-container label{
+    display: inline-block;
+    width: 100px;
+}
+
+.form-container .label-container:last-child label{
+    width: auto;
+}
+
+.form-container .label-container:last-child input{
+    margin-right: 20px;
+}
+
+.form-container .label-container p{
+    display: inline-block;
+    width: 100px;
+}
+
+.close-button{
+    position: absolute;
+    top:5px;
+    right: 10px;
+    font-size: 1.1rem;
+    border:none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn{
+    min-width: 100px;
+    padding: 8px 16px;
+    background-color: #00352d;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+
+
+.hidden{
+    display: none;
+}
+
+.done{
+    opacity: 0.5;
+}

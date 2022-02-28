@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>Another Todo</title>
+</head>
+<body>
+
+<div class="container">
+    <button class="btn show-form-btn" id="show-form-button">Add Task</button>
+
+    <div class="list-wrapper" id="list-wrapper">
+        <div class="task-container">
+            <div class="title" id="title-container">Title</div>
+            <div class="description" id="description-container">text</div>
+            <div class="date" id="date-container">data</div>
+            <div class="priority" id="priority-container">priority</div>
+        </div>
+    </div>
+</div>
+
+<div class="form-container hidden" id="form-container">
+    <form class="form">
+        <div class="label-container">
+            <label for="title-label">Title:</label>
+            <input type="text" name="title" id="title-label" required>
+        </div>
+        <div class="label-container">
+            <label for="description-label">Description:</label>
+            <textarea name="description" id="description-label"></textarea>
+        </div>
+        <div class="label-container">
+            <label for="date-label">Date:</label>
+            <input class="test" type="date" name="date" id="date-label">
+        </div>
+        <div class="label-container">
+            <p>Priority:</p>
+            <label for="low-label">Low</label>
+            <input type="radio" name="priority" id="low-label" value="low">
+            <label for="medium-label">Medium</label>
+            <input type="radio" name="priority" id="medium-label" value="medium" checked>
+            <label for="high-label">High</label>
+            <input type="radio" name="priority" id="high-label" value="high">
+        </div>
+
+    </form>
+    <button id="close-form" class="close-button">X</button>
+    <button type="submit" id="add-btn" class="btn add-btn">Add</button>
+    <button type="submit" id="edit-btn" class="btn edit-btn hidden">Confirm</button>
+</div>
+
+
+</body>
+</html>
