@@ -129,7 +129,6 @@ class TaskApi{
         button.dataset.id = dataInfo;
         button.classList.add('btn');
         button.innerText = "Edit";
-        //this insue, need to use arrow function
         button.addEventListener('click', (e) =>{
             showForm();
             addTaskButton.classList.add('hidden');
